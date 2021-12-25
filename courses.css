@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0 auto;
+  padding: 0px;
+  font-family: "Play", sans-serif;
+  background: #F8F8F8;
+  color: black;
+  justify-content: center;
+  align-items: center;
+}
+.navbar{
+    margin-left: 200px;
+}
+.navbar ul{
+  display: flex;
+  padding: 15px;
+  margin: 0;
+  list-style: none;
+}
+.name .li{
+  position: relative;
+  margin: 0 1.4em;
+  padding: 1em 1.6em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s;
+  transition-delay: 0.2s;
+}
+
+.name .li:hover{
+  background: #018667;
+}
+
+.name .li:before{
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 2.5px;
+  background-color: black;
+  transition: all 0.2s;
+}
+
+.name .li:hover::before{
+  bottom: 55px;
+  left: 0px;
+}
+
+.name .li a{
+  text-decoration: none;
+  color: black;
+}
+
+.name .li:hover a{
+  color: white;
+}
+
+.tela{
+    margin: 0;
+    display:flex;
+    height: 700px;
+    background-image: url(academy.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.tela .text{
+    margin: 110px 0 0 400px;
+}
+.tela #quota {
+    color: grey;
+}
+
+
+
+
+body .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  body .container .card {
+    position: relative;
+    min-width: 320px;
+    height: 460px;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+      inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+      5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    margin:20px;
+    transition: 0.5s;
+  }
+  
+  body .container .card .box {
+    position: absolute;
+    top:15px;
+    left:15px;
+    right:15px;
+    bottom:15px;
+    background: #eef4ed;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+  
+  body .container .card .box:hover {
+    transform: translateY(-50px);
+  }
+  
+  body .container .card .box:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+  }
+  
+  body .container .card .box .content {
+    padding: 20px;
+    text-align: center;
+  }
+  /* body .container .card .box .content .course-desc{
+      text-align:left;
+  } */
+  
+  body .container .card .box .content h4 {
+    font-size:19.5px;;
+    color:#0b2545;
+    z-index: 1;
+    transition: 0.5s;
+    margin-bottom: 15px;
+  }
+  
+  body .container .card .box .content p {
+    font-size: 1rem;
+    font-weight: 300;
+    /* color: rgba(255, 255, 255, 0.9); */
+    z-index: 1;
+    color: #0b2545;
+    transition: 0.5s;
+  }
+  body .container .card .box .content .course-desc{
+      color:#0b2545;
+  }
+  
+  body .container .card .box .content a {
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    background:#0b2545;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    margin-top: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+  }
+  body .container .card .box .content a:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+    background: #fff;
+    color: #000;
+  }
